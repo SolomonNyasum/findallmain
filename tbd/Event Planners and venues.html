@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Title and Description -->
+    <title>FindAll Business Directory | Discover Local Businesses Near You</title>
+    <meta name="description" content="FindAll connects you with top-rated local businesses. Explore a wide range of services and industries, from dining to professional services, in your area. Start discovering today!">
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="business directory, local businesses, services, restaurants, shops, professional services, near me, FindAll directory, local search">
+    
+    <!-- Author -->
+    <meta name="author" content="FindAll Team">
+    
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="FindAll Business Directory | Discover Local Businesses Near You">
+    <meta property="og:description" content="Discover the best local businesses in your area with FindAll. Connect with top-rated services across industries and explore detailed business profiles.">
+    <meta property="og:image" content="https://www.findall.com/og-image.jpg"> <!-- Replace with actual image URL -->
+    <meta property="og:url" content="https://www.findall.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card for Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FindAll Business Directory | Discover Local Businesses Near You">
+    <meta name="twitter:description" content="Explore top-rated local businesses and services with FindAll. Find detailed business information to help you make informed choices.">
+    <meta name="twitter:image" content="https://www.findall.com/twitter-image.jpg"> <!-- Replace with actual image URL -->
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.findall.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <!-- Robots - Control indexing and links -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Google Site Verification (optional if using Google Search Console) -->
+    <meta name="google-site-verification" content="your_verification_token"> <!-- Replace with actual token -->
+    
+<link rel="stylesheet" href="css/Styles.css">
+
+</head>
+<body>
+
+<header>
+    <h1>FindAll</h1>
+	<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+    </ul>
+</nav>
+</header>
+<div class="header-banner">
+            <img src="images/Headerbanner.jpg" alt="Banner" />
+        </div>
+<!--<div class="Categories">
+	<strong>
+	<ul>
+	<li><a href="/restaurant.html">Food Services</a></li>
+	<li><a href="/media.html">Media and Entertainment</a></li>
+	<li><a href="/Hospitality.html">Hospitality and Tourism</a></li>
+	<li><a href="/schools.html">Education and Learning</a></li>
+	<li><a href="/fashion.html">Fashion and Beauty</a></li>
+	<li><a href="/logistics.html">Transportation and Logistics</a></li>
+	<li><a href="/Bakery.html">Bakery</a></li>
+	</ul></strong>
+</div>-->
+<div class="container">
+    <!-- Left sidebar for ads -->
+    <div class="sidebar left-sidebar">
+        <!-- Ad content here -->
+        <p>Ad Space</p>
+    </div>
+	<div class="main-content">
+        <!-- Search bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a business..." />
+            <button>Search</button>
+        </div>
+    <!-- Main business directory section -->
+    <div class="directory">
+        <div class="business-card">
+            <div class="business-logo">
+                <img src="images/IMG-20240513-WA0003.jpg" alt="Business Logo">
+            </div>
+            <div class="business-info">
+                <h2>Sammy's World of Creations</h2>
+                <p><strong>Category:</strong>Event Planner</p>
+				<p><i>At sizzling spot, we pride ourself in giving you the best flavour that will </br></i></p>
+                <div class="contacts"><p><strong>Address:</strong> Road Block, Jalingo</p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <p><strong>Email:</strong> sizzlingspot@gmail.com</p></div>
+            </div>
+        </div>
+        <!-- Add more business cards as needed -->
+        </div>
+    </div>
+
+    <!-- Right sidebar for ads -->
+    <div class="sidebar right-sidebar">
+        <!-- Ad content here -->
+        <p>Ad Space</p>
+    </div>
+</div>
+<div class="ad-banner-horizontal">
+    <div class="ad-content-horizontal">
+        <h2>Advertise with Us!</h2>
+        <p>Reach more customers by placing your ad here. Contact us for more details.</p>
+        <a href="#" class="ad-button-horizontal">Learn More</a>
+    </div>
+    </div>
+<footer>
+<div class="footer">
+    <p>&copy; 2024 FindAll Business Directory</p>
+	</div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const searchInput = document.querySelector(".search-bar input[type='text']");
+        const businessCards = document.querySelectorAll(".business-card");
+
+        // Listen for input events on the search bar
+        searchInput.addEventListener("input", function() {
+            const searchQuery = searchInput.value.toLowerCase().trim();
+
+            businessCards.forEach(card => {
+                // Get the business name and category for each card
+                const businessName = card.querySelector("h2").textContent.toLowerCase();
+                const category = card.querySelector("p strong").textContent.toLowerCase();
+
+                // Check if the search query matches the business name or category
+                if (businessName.includes(searchQuery) || category.includes(searchQuery)) {
+                    card.style.display = "flex"; // Show the card if it matches
+                } else {
+                    card.style.display = "none"; // Hide the card if it doesn't match
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

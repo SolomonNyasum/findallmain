@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Title and Description -->
+    <title>FindAll Business Directory | Discover Local Businesses Near You</title>
+    <meta name="description"
+        content="FindAll connects you with top-rated local businesses. Explore a wide range of services and industries, from dining to professional services, in your area. Start discovering today!">
+
+    <!-- Keywords -->
+    <meta name="keywords"
+        content="business directory, local businesses, services, restaurants, shops, professional services, near me, FindAll directory, local search">
+
+    <!-- Author -->
+    <meta name="author" content="FindAll Team">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="FindAll Business Directory | Discover Local Businesses Near You">
+    <meta property="og:description"
+        content="Discover the best local businesses in your area with FindAll. Connect with top-rated services across industries and explore detailed business profiles.">
+    <meta property="og:image" content="https://www.findall.com/og-image.jpg"> <!-- Replace with actual image URL -->
+    <meta property="og:url" content="https://www.findall.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card for Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FindAll Business Directory | Discover Local Businesses Near You">
+    <meta name="twitter:description"
+        content="Explore top-rated local businesses and services with FindAll. Find detailed business information to help you make informed choices.">
+    <meta name="twitter:image" content="https://www.findall.com/twitter-image.jpg">
+    <!-- Replace with actual image URL -->
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.findall.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Robots - Control indexing and links -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Site Verification (optional if using Google Search Console) -->
+    <meta name="google-site-verification" content="your_verification_token"> <!-- Replace with actual token -->
+
+    <link rel="stylesheet" href="css/Styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>FindAll</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/categories.html">Categories</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="header-banner">
+        <img src="images/Headerbanner.jpg" alt="Banner" />
+    </div>
+    <!-- Search bar -->
+    <div class="search-bar">
+      <input type="text" id="categorySearch" placeholder="Search categories..." onkeyup="searchCategories()">
+  </div>
+    <div class="categories-grid">
+        <div class="category">
+          <img src="images/restaurant_3207949.png" alt="Icon 1">
+          <p><strong>Food Services</strong></p>
+          <!-- Subcategories -->
+      <ul class="subcategories">
+        <li><a href="/Restaurant.html">Restaurant and Bars</a></li>
+        <li><a href="/catering.html">Catering Services</a></li>
+        <li><a href="/Bakery.html">Bakeries and Confectioneries</a></li>
+    </ul>
+        </div>
+        <div class="category">
+          <img src="images/education_4207253.png" alt="Icon 2">
+          <p><strong>Education and Learning</strong>
+          <!-- Subcategories -->
+      <ul class="subcategories">
+        <li><a href="/Schools.html">Primary and Secondary Schools </a></li>
+        <li><a href="/Vocational.html">Vocational and Technical Training</a></li>
+        <li><a href="/Tutoring Centres.html">Tutoring Centers</a></li>
+    </ul>
+        </div>
+        <div class="category">
+          <img src="images/beauty_10616492.png" alt="Icon 3">
+          <p><strong>Fashion and Beauty</strong></p>
+          <!-- Subcategories -->
+      <ul class="subcategories">
+        <li><a href="/fashion.html">Fashion Houses</a></li>
+        <li><a href="/MakeUp studios.html">MakeUp studios</a></li>
+        <li><a href="/Boutique.html">Boutiques</a></li>
+        <li><a href="/Skin and Beauty Products.html">Skin and Beauty Products</a></li>
+        <li><a href="/Salons.html">Salons</a></li>
+        <li><a href="/Fragrances and Perfumes.html"> Fragrances and Perfumes</a></li>
+    </ul>
+        </div>
+        <div class="category">
+          <img src="images/hotel_3378752.png" alt="Icon 4">
+          <p><strong>Hospitality and Tourism</strong></p>
+          <!-- Subcategories -->
+      <ul class="subcategories">
+        <li><a href="/Hotels.html">Hotels and Lodges</a></li>
+        <li><a href="/Event Planners and venues.html">Event Planning and Venues</a></li>
+        <li><a href="/Tours and Guides.html">Tour operators and Guides</a></li>
+    </ul>
+        </div>
+        <!-- Add more categories as needed -->
+        <div class="category">
+          <img src="images/content-marketing_9727465.png" alt="Icon 1">
+          <p><strong>Media and Entertainment</strong></p>
+          <ul class="subcategories">
+        <li><a href="/Music and audio producers.html">Music and Audio Production</a></li>
+        <li><a href="/Graphics Design.html">Graphics Designers and Printing</a></li>
+        <li><a href="/Photo studios.html">Photo Studios</a></li>
+        <li><a href="/Sound Services.html">Sound Services (DJ Services)</a></li>
+        <li><a href="/Video Producers.html">Video Production</a></li>
+      </ul>
+        </div>
+        <div class="category">
+          <img src="images/motorcycle_15300698.png" alt="Icon 2">
+          <p><strong>Transportation and Logistics</strong></p>
+          <ul class="subcategories">
+            <li><a href="/logistics.html">Delivery and Courier Services</a></li>
+            <li><a href="/Taxi Services.html">Taxi Services</a></li>
+          </ul>
+        </div>
+        <div class="category">
+          <img src="images/painter_5510847.png" alt="Icon 3">
+          <p><strong>Artisans</strong></p>
+          <ul class="subcategories">
+            <li><a href="/Furnitures.html">Furnitures</a></li>
+            <li><a href="/Plumbers.html">Plumbers</a></li>
+            <li><a href="/Masons.html">Masons</a></li>
+            <li><a href="/Electricians.html">Electicians</a></li>
+            <li><a href="/Tilers.html">Tilers</a></li>
+            <li><a href="/Painters.html">Painters</a></li>
+            <li><a href="/Auto repairs.html">Auto Repairers</a></li>
+            <li><a href="/Welders.html">Welders</a></li>
+          </ul>
+        </div>
+        <div class="category">
+          <img src="images/property_15821422.png" alt="Icon 4">
+          <p><strong>Real Estate and Properties</strong></p>
+          <ul class="subcategories">
+            <li><a href="/Estate Agencies.html">Real Estate Agencies</a></li>
+            <li><a href="/architectural services.html">Architectural Services</a></li>
+            <li><a href="/land surveying.html">Land Sureveying</a></li>
+          </ul>
+        </div>
+      </div>
+            <!-- Horizontal Ad Banner -->
+<div class="ad-banner-horizontal">
+  <div class="ad-content-horizontal">
+      <h2>Advertise with Us!</h2>
+      <p>Reach more customers by placing your ad here. Contact us for more details.</p>
+      <a href="#" class="ad-button-horizontal">Learn More</a>
+  </div>
+  </div>           
+  <div class="categories-grid">
+    <div class="category">
+      <img src="images/Health.png" alt="Icon 1">
+      <p><strong>Healthcare and Wellness</strong></p>
+      <ul class="subcategories">
+        <li><a href="/medical clinics.html">Medical Clinics</a></li>
+        <li><a href="/pharmaceuticals.html">Pharmaceuticals</a></li>
+        <li><a href="/fitness and gym.html">Fitness and Gym Centres</a></li>
+        <li><a href="/spa and massage.html">Spa and Massage Services</a></li>
+      </ul>
+    </div>
+    <div class="category">
+      <img src="images/cogwheel_1275570.png" alt="Icon 2">
+      <p><strong>Automotive Services</strong></p>
+      <ul class="subcategories">
+        <li><a href="/auto repairs.html">Auto Repair and Maintenance</a></li>
+        <li><a href="/car wash and detailing.html">Car Wash and Detailing</a></li>
+        <li><a href="/car dealerships.html">Car Dealerships</a></li>
+        <li><a href="/Tire services.html">Tire Services</a></li>
+      </ul>
+    </div>
+    <div class="category">
+      <a href="#"><img src="images/balls-sports_5540420.png" alt="Icon 3">
+      <p><strong>Sports and Recreation</strong></p></a>
+    </div>
+    <div class="category">
+      <img src="images/renewable-energy_4515708.png" alt="Icon 4">
+      <p><strong>Energy and Utilities</strong></p>
+      <ul class="subcategories">
+        <li><a href="/renewable enerdy.html">Renewable Energy Services</a></li>
+        <li><a href="/waste management.html">Waste Management</a></li>
+      </ul>
+    </div>
+    <!-- Add more categories as needed -->
+    <div class="category">
+        <a href="/veterinary services.html">
+      <img src="images/medical_9098478.png" alt="Icon 1">
+      <p><strong>Veterinary Services</strong></p></a>
+    </div>
+    <div class="category">
+      <img src="images/agriculture_5341391.png" alt="Icon 3">
+      <p><strong>Agriculture and Farming</strong></p>
+      <ul class="subcategories">
+        <li><a href="/Agriculture Equipment.html">Agriculture Equipment Supply</a></li>
+        <li><a href="/Agricultural Produce.html">Agricultural Produce Supply</a></li>
+        <li><a href="/Horticulture and Landscaping.html">Horticulture and Landscaping</a></li>
+        <li><a href="/Livestock farming.html">Livestock and Poultry Farming</a></li>
+      </ul>
+    </div>
+    <div class="category">
+        <a href="/Professional services.html">
+      <img src="images/worker_2245238.png" alt="Icon 4">
+      <p><strong>Professional Services</strong></p></a>
+    </div>
+    <div class="category">
+      <img src="images/store_15251041.png" alt="Icon 1">
+      <p><strong>Electronics</strong></p>
+      <!-- Subcategories -->
+      <ul class="subcategories">
+          <li><a href="/electric gadgets.html">Electric Gadgets</a></li>
+          <li><a href="/phones and laptops.html">Phones and Laptops</a></li>
+          <li><a href="/accessories.html">Accessories</a></li>
+          <li><a href="/electronic repairs.html">Electronic Repairs</li></a>
+      </ul>
+  </div>
+  <div class="category">
+    <a href="/Financial services.html">
+    <img src="images/budget_781760.png" alt="Icon 1">
+    <p><strong>Financial Services</strong></p></a>
+</div>
+  </div>
+    <footer>
+        <div class="footer">
+          <p>&copy; 2024 FindAll Business Directory. All rights reserved.</p>
+          </div>
+        </footer>
+        <script>
+        function searchCategories() {
+          // Get the input value and convert it to lowercase
+          const input = document.getElementById('categorySearch').value.toLowerCase();
+          // Get all category elements
+          const categories = document.querySelectorAll('.categories-grid .category');
+          
+          // Loop through categories and display those that match the search query
+          categories.forEach(category => {
+              const categoryText = category.textContent.toLowerCase();
+              
+              // If the category text includes the input, display it; otherwise, hide it
+              if (categoryText.includes(input)) {
+                  category.style.display = 'block';
+              } else {
+                  category.style.display = 'none';
+              }
+          });
+      }
+      // This script can toggle visibility of subcategories when a category is clicked
+document.querySelectorAll('.category').forEach(category => {
+    category.addEventListener('click', () => {
+        const subcategories = category.querySelector('.subcategories');
+        subcategories.style.display = subcategories.style.display === 'none' ? 'block' : 'none';
+    });
+});
+
+      </script>      
+      </body>
+      </html>
